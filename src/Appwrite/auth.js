@@ -55,7 +55,7 @@ export class AuthService{
          
       } catch (error) {
 
-         console.log("Appwrite getCurrent  user error")
+         console.log("Appwrite getCurrent  user error",error)
          throw error
       }
       return null
@@ -67,7 +67,7 @@ export class AuthService{
          await this.account.deleteSession('current')
          
       } catch (error) {
-         console.log("Appwrite logout error")
+         console.log("Appwrite logout error",error)
             throw error
       }
      }
