@@ -12,8 +12,6 @@ function Login() {
     const {register, handleSubmit} = useForm()
     const [error, setError] = useState("")
 
-    console.log(data)
-
     const login = async(data) => {
         setError("")
         try {
